@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<link rel="stylesheet" type="text/css" href="../css/page/info.css" />
+<style>    
+    #info{
+        background-color: rgba(176, 248, 245, 0.5);
+    }
+</style>
+</head>
+
+<body>
+        <div id="title">
+            <h1>{{h1}}</h1>
+            <h2>{{h2}}</h2>
+        </title>
+        <div class="container">      
+            <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+                <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" id="index" href="index.html">首頁</a>
+                <a class="p-2 text-muted" id="plan" href="plan.html">計畫內容</a>
+                <a class="p-2 text-muted" id="cooperate" href="cooperate.html">合作企業</a>
+                <a class="p-2 text-muted" id="info" href="info.html">課程資訊</a>
+                <a class="p-2 text-muted" id="intern" href="intern.html">校外實習媒合</a>
+                <a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>
+                </nav>
+        </div>
+      
+   
+      
+      <main role="main" class="container">
+        <div class="row">
+            <!--內文-->
+            <h1>課程資訊</h1>        
+            <div class="blog-post">   
+                <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true">
+                    <h1 style="text-align: center;">2019全國大專新生學習適應調查-填問卷×送禮券</h1><h2 id="主旨" style="">主旨</h2><ul>
+                    <li>讓學校更加了解您的學習與適應情形</li>
+                    <li>請各位新鮮人踴躍填寫問卷</li>
+                    <li>表達您的大學校園滿意度與學習心得</li>
+                    </ul><h2 id="活動對象" style="">活動對象</h2><h3 id="只要您是本校108學年度大一新生" style="">只要您是本校108學年度大一新生</h3><h2 id="活動期間" style="">活動期間</h2><h3 id="即日起至108年12月31日止" style="">即日起至108年12月31日止</h3><h2 id="相關連結" style="">相關連結</h2><blockquote>
+                    <p>學生篇 <a href="http://nmsd.ncut.edu.tw/wbcmss/Auth/Login" target="_blank" rel="noopener">http://nmsd.ncut.edu.tw/wbcmss/Auth/Login</a><br>
+                    問卷平台  <a href="http://tirc.twaea.org.tw/survey/auth/login" target="_blank" rel="noopener">http://tirc.twaea.org.tw/survey/auth/login</a><br>
+                    填寫完「2019 全國大專新生學習適應調查問卷」，就可至本中心領取禮卷<br>
+                    <small><i class="fa fa-user"></i> 校務研發中心</small></p>
+                    </blockquote><h2 id="兌換資訊" style="">兌換資訊</h2><div class="alert alert-success">
+                    <p>【兌換地點】創新研發大樓3樓 校務研發中心<br>
+                    【兌換時間】8點30分至17點10分<br>
+                    【洽詢單位】校務研發中心 04-2392-4505分機2962</p>
+                    </div><div class="alert alert-warning">
+                    <p>每人限填一份問卷請勿重複填寫</p>
+                    </div>
+                </div>
+            </div>
+        <!-- /.blog-post -->
+        </div><!-- /.row -->
+        </main><!-- /.container -->
+    </div>
+</body>
+      
+<!--頁尾-->
+<footer class="blog-footer">
+    <footbox></footbox>
+    <div id="copyright">
+        <copyright></copyright>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/myfootbox.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
+<script>
+    title.$mount("#title");
+    var vm = new Vue({
+        el: '#copyright'
+    });
+    var vm2 = new Vue({
+        el: '.blog-footer'
+    });
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>          
+        <script src="../js/vue.js"></script>
+        <script src="nav/nav.js">//載入頁首導覽列及頁腳</script>        
+        <script src="index.js"></script>
+    </head>
+    
+    <body> 
+        <div class="content" style="margin:15px;">    
+            <div id="app">
+                <h1 style="text-align: center;">{{ message }}</h1>
+                <p>{{content}}</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    app.$mount('#app');
+</script>

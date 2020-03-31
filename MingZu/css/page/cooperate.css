@@ -1,0 +1,14 @@
+.py-5{
+    padding-top: 1rem !important;;
+}
+img{
+  width: 200px;
+  max-width: -moz-available;    
+  max-width: -webkit-fill-available;
+  margin-left: auto;
+  margin-right: auto;
+}   
+#link{
+  margin-top: 0;
+  margin-bottom: 1rem !important;
+}   

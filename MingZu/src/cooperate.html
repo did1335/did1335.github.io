@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<link rel="stylesheet" type="text/css" href="../css/page/cooperate.css" />
+<style>    
+    #cooperate{
+        background-color: rgba(176, 248, 245, 0.5);
+    }    
+</style>
+</head>
+
+<body>
+    <div id="title">
+        <h1>{{h1}}</h1>
+        <h2>{{h2}}</h2>
+    </title>
+    <div class="container">      
+        <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+            <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" id="index" href="index.html">首頁</a>
+            <!--<a class="p-2 text-muted" id="plan" href="plan.html">計畫內容</a>-->
+            <a class="p-2 text-muted" id="cooperate" href="cooperate.html">合作企業</a>
+            <!--<a class="p-2 text-muted" id="info" href="info.html">課程資訊</a>
+            <a class="p-2 text-muted" id="intern" href="intern.html">校外實習媒合</a>-->
+            <a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>
+            </nav>
+    </div>
+      
+    <main role="main"> 
+            <div class="album py-5 bg-light">
+              <div class="container" id="app">
+                
+                <!--內文-->  
+                <div class="row">
+                    <h1>合作企業</h1>
+                </div> 
+                <div class="row" id="group">
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                        <a v-bind:href="a1" target="_blank"><p class="card-text" id="link">{{p1}}</p></a>
+                        <div class="d-flex justify-content-between align-items-center">                              
+                          <img src="../img/cooperate/logo1.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                          <a v-bind:href="a2" target="_blank"><p class="card-text" id="link">{{p2}}</p></a>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="../img/cooperate/logo2.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                          <a v-bind:href="a3" target="_blank"><p class="card-text" id="link">{{p3}}</p></a>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="../img/cooperate/logo3.png" style="zoom:0.4;" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                          <a v-bind:href="a4" target="_blank"><p class="card-text" id="link">{{p4}}</p></a>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="../img/cooperate/logo4.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                          <a v-bind:href="a5" target="_blank"><p class="card-text" id="link">{{p5}}</p></a>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="../img/cooperate/logo5.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                          <a v-bind:href="a6" target="_blank"><p class="card-text" id="link">{{p6}}</p></a>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="../img/cooperate/logo6.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!--<div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                        <a v-bind:href="a7" target="_blank"><p class="card-text" id="link">{{p7}}</p></a>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <img src="../img/cooperate/logo7.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                        <a v-bind:href="a8" target="_blank"><p class="card-text" id="link">{{p8}}</p></a>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <img src="../img/cooperate/logo8.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-body">
+                        <a v-bind:href="a9" target="_blank"><p class="card-text" id="link">{{p9}}</p></a>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <img src="../img/cooperate/logo9.png" :onerror="noimg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>-->
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      
+<!--頁尾-->
+<footer class="blog-footer">
+    <footbox></footbox>
+    <div id="copyright">
+        <copyright></copyright>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/myfootbox.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
+<script src="../js/equalheight.js"></script>
+<script>
+var vm = new Vue({
+    el:'#app',
+    data: {
+      p1: "永鉅精密科技股份有限公司",
+      p2: "高明鐵企業股份有限公司",
+      p3: "鋐光實業股份有限公司",
+      p4: "坤鼎機械設計繪圖工作室",
+      p5: "忠洋企業社",
+      p6: "達康科技國際(股)公司",
+      p7: "Insert Picture7",
+      p8: "Insert Picture8",
+      p9: "Insert Picture9",      
+      noimg: 'this.onerror=null; this.src="../img/cooperate/error.jpg"; this.style.width="30%"; this.style.height="30%"',
+      a1: 'http://www.fourstarcnc.com/Taiwan/',
+      a2: 'https://www.gmtglobalinc.com/',
+      a3: 'https://www.facebook.com/%E9%8B%90%E5%85%89%E5%AF%A6%E6%A5%AD-276583942354092/',
+      a4: 'https://www.ihomediy.com.tw/?blog=24403',
+      a5: 'https://www.yes123.com.tw/admin/job_refer_comp_info.asp?p_id=20130322140156_10633074',
+      a6: 'https://www.darcam.com.tw/',
+      a7: '#',
+      a8: '#',
+      a9: '#'      
+    }
+});
+
+var vm2 = new Vue({
+    el: '#copyright'
+});
+
+title.$mount("#title");
+
+$('.col-md-4').eqHeights();
+</script>
+
+
+

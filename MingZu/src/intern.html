@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<style>    
+    #intern{
+        background-color: rgba(176, 248, 245, 0.5);
+    }    
+</style>
+</head>
+
+<body>    
+        <div id="title">
+            <h1>{{h1}}</h1>
+            <h2>{{h2}}</h2>
+        </title>
+        <div class="container">      
+        <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" id="index" href="index.html">首頁</a>
+                <a class="p-2 text-muted" id="plan" href="plan.html">計畫內容</a>
+                <a class="p-2 text-muted" id="cooperate" href="cooperate.html">合作企業</a>
+                <a class="p-2 text-muted" id="info" href="info.html">課程資訊</a>
+                <a class="p-2 text-muted" id="intern" href="intern.html">校外實習媒合</a>
+                <a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>
+            </nav>
+        </div>
+      
+   
+      
+      <main role="main" class="container">
+        <div class="row">
+            <!--內文-->
+            <h1>校外實習媒合</h1>     
+            <div class="blog-post">                
+                <article>
+                        本計畫經參與教師實地與合作企業深入討論，為因應企業人才需求並依此擬定人才需求技術內容及規劃模組課程以提升企業於生產製造管理方面的實務技能，課程重點包刮技術層面及管理層面：
+                        ​
+                        技術面：提升員工的生產技術，透過課程培訓灌輸學生唯有不斷的創新、研發，才能提高產品的價值與利潤，因此，精進技術提昇是維繫企業競爭力與永續生存的第一道法門。
+                        管理面：培訓學生具備現代管理技術，包括5S現場管理技能、品管圈的改善手法、統計製程品質管制技術應用、預測技術之應用，生產排程之規劃、生產線平衡之計算與改善、作業流程分析，ISO品質稽核制度、ABC物料管理手法、存貨管理實務技能、精實生產實務應用及實施全面品管，採用現代化的ERP及品質管制軟體訓練學生，期使制度明確化而且要不斷的合理化，持續不斷的改善生產環境，包括降低庫存量、降低成本、提升製程良率與品質管控；研發行銷策略與創新管理，以提升企業市場能見度、競爭力與內部的管控與效率。
+                        
+                        
+                        ​不論是生產技術或管理技術的提升，都需透過取得專業證照及配合現場實務的操作，本課程規畫輔導學生考取工業工程品質管理技術師、工業工程生產管理技術師即工業工程師(具備生產管理、品質管理、人因工程及流程分析與改善能力等專業IE 工程師之技術能力)。
+                </article> 
+            </div>
+        <!-- /.blog-post -->
+        </div><!-- /.row -->
+        </main><!-- /.container -->
+    </div>
+</body>
+      
+<!--頁尾-->
+<footer class="blog-footer">
+    <footbox></footbox>
+    <div id="copyright">
+        <copyright></copyright>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/myfootbox.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
+<script>
+    title.$mount("#title");
+    var vm = new Vue({
+    el: '#copyright'
+    });
+    var vm2 = new Vue({
+        el: '.blog-footer'
+    });
+</script>

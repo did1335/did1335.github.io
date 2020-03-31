@@ -1,0 +1,14 @@
+@media screen and (max-width: 1000px) {
+    .symbol {
+        display: none;
+    }
+    .content>#skills {
+        display: inline-table;
+    }
+    .content>#skills>div>h1 {
+        font-size: 16pt;
+    }
+    .skilltext {
+        display: list-item;
+    }
+}

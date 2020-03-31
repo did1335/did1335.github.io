@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--title-->
+    <title>朱庭宏履歷</title>
+
+    <!--custom style-->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/rwd.css" />
+
+    <!--dev-->
+    <!--
+    <script src="ext/vue/dev/vue.js"></script>
+    -->
+
+    <!--release-->
+    <script src="ext/vue/release/vue.js"></script>
+
+    <!--Vue-->
+    <script type="text/javascript" src="view/app.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="content">
+            <div id="head">
+                <div class="inner">
+                    <h1 class="title" v-html="head.title"></h1>
+                    <a href="https://github.com/did1335" id="subtitle" target="_blank">{{head.subtitle}}</a>
+                    <!--<p id="quote" v-html="head.quote"></p>-->
+                </div>
+                <!--photo-->
+                <!--<div id='my_photo'><img :src="head.my_photo"></div>-->
+	 <iframe width="320" height="240" style="float:right" src="https://www.youtube.com/embed/NpFKLC2frp8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </div>
+            <div id="contact">
+                <h1 class="title">{{contact.title}}</h1>
+                <div @click="goMail">
+                    <img :src="icon.mail" width="30" height="30">
+                    <p class="icon">{{contact.mail}}</p>
+                </div>
+                <div @click="goFb">
+                    <img :src="icon.fb" width="30" height="30">
+                    <p class="icon">{{contact.fb}}</p>
+                </div>
+                <!--<div @click="goGithub">
+                    <img :src="icon.github" width="30" height="30">
+                    <p class="icon">{{contact.github}}</p>
+                </div>-->
+            </div>
+            <div id="compitition">
+                <h1 class="title">{{compitition.title}}</h1>
+                <div class="num1" id="com1">
+                    <div><span>{{compitition.num1}}</span></div>
+                </div>
+                <div class="num2" id="com2">
+                    <div><span>{{compitition.num2}}</span></div>
+                </div>
+            </div>
+            <div id="experience">
+                <h1 class="title">{{experience.title}}</h1>
+                <div>
+                    <div style="padding-top: 5px;">
+                        <p class="tag">{{experience.date1}}</p>
+                    </div>
+                    <p class="exp">{{experience.exp1}}</p>
+                </div>
+                <div>
+                    <div style="padding-top: 5px;">
+                        <p class="tag">{{experience.date2}}</p>
+                    </div>
+                    <p class="exp">{{experience.exp2}}</p>
+                </div>
+                <div>
+                    <div style="padding-top: 5px;">
+                        <p class="tag">{{experience.date3}}</p>
+                    </div>
+                    <p class="exp">{{experience.exp3}}</p>
+                </div>
+                <div>
+                    <div style="padding-top: 5px;">
+                        <p class="tag">{{experience.date4}}</p>
+                    </div>
+                    <p class="exp">{{experience.exp4}}</p>
+                </div>
+                <div>
+                    <div style="padding-top: 5px;">
+                        <p class="tag" :style="experience.yellow">{{experience.date5}}</p>
+                    </div>
+                    <!--<p class="exp">{{experience.exp5}}</p>-->
+                </div>
+                <div>
+                    <p class="exp">{{experience.exp6}}</p>
+                </div>
+                <div>
+                    <p class="exp">{{experience.exp7}}</p>
+                </div>
+            </div>
+            <!--<div id="skills">
+                <h1 class="title" id="stitle">{{skills.title}}</h1>
+                <div id="a11">
+                    <h1 :style="skills.Hstyle">{{skills.FEE}}</h1>
+                    <div class="symbol">
+                        <div v-for="item in FEE"></div>
+                    </div>
+                    <div class="skilltext" v-for="item in FEE">
+                        <div>{{item}}</div>
+                    </div>
+                </div>
+                <div id="a22">
+                    <h1 :style="skills.Hstyle">{{skills.BEE}}</h1>
+                    <div class="symbol">
+                        <div v-for="item in BEE"></div>
+                    </div>
+                    <div class="skilltext" v-for="item in BEE">
+                        <div>{{item}}</div>
+                    </div>
+                </div>
+                <div id="a33">
+                    <h1 :style="skills.Hstyle">{{skills.Management}}</h1>
+                    <div class="symbol">
+                        <div v-for="item in Management"></div>
+                    </div>
+                    <div class="skilltext" v-for="item in Management">
+                        <div>{{item}}</div>
+                    </div>
+                </div>
+                <div id="a44">
+                    <h1 :style="skills.Hstyle">{{skills.Robotics}}</h1>
+                    <div class="symbol">
+                        <div v-for="item in Robotics"></div>
+                    </div>
+                    <div class="skilltext" v-for="item in Robotics">
+                        <div>{{item}}</div>
+                    </div>
+                </div>
+                <div id="a55">
+                    <h1 :style="skills.Hstyle">{{skills.MCU}}</h1>
+                    <div class="symbol">
+                        <div v-for="item in MCU"></div>
+                    </div>
+                    <div class="skilltext" v-for="item in MCU">
+                        <div>{{item}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>-->        
+    </div>
+    <footer>Copywrite &copy; 2020 朱庭宏</footer>
+
+    <script>
+        app.$mount('#app');
+    </script>
+</body>
+
+</html>
