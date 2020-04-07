@@ -11,7 +11,18 @@
 <style>    
     #info{
         background-color: rgba(176, 248, 245, 0.5);
+    } 
+    th{
+        text-align: center;
     }
+    th,td{
+        border: 1px solid black;
+        padding: 1px 5px;
+        vertical-align: center;
+    } 
+    td>ul>li{
+        list-style: none;
+    }  
 </style>
 </head>
 
@@ -38,25 +49,166 @@
         <div class="row">
             <!--內文-->
             <h1>課程資訊</h1>        
-            <div class="blog-post">   
-                <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true">
-                    <h1 style="text-align: center;">2019全國大專新生學習適應調查-填問卷×送禮券</h1><h2 id="主旨" style="">主旨</h2><ul>
-                    <li>讓學校更加了解您的學習與適應情形</li>
-                    <li>請各位新鮮人踴躍填寫問卷</li>
-                    <li>表達您的大學校園滿意度與學習心得</li>
-                    </ul><h2 id="活動對象" style="">活動對象</h2><h3 id="只要您是本校108學年度大一新生" style="">只要您是本校108學年度大一新生</h3><h2 id="活動期間" style="">活動期間</h2><h3 id="即日起至108年12月31日止" style="">即日起至108年12月31日止</h3><h2 id="相關連結" style="">相關連結</h2><blockquote>
-                    <p>學生篇 <a href="http://nmsd.ncut.edu.tw/wbcmss/Auth/Login" target="_blank" rel="noopener">http://nmsd.ncut.edu.tw/wbcmss/Auth/Login</a><br>
-                    問卷平台  <a href="http://tirc.twaea.org.tw/survey/auth/login" target="_blank" rel="noopener">http://tirc.twaea.org.tw/survey/auth/login</a><br>
-                    填寫完「2019 全國大專新生學習適應調查問卷」，就可至本中心領取禮卷<br>
-                    <small><i class="fa fa-user"></i> 校務研發中心</small></p>
-                    </blockquote><h2 id="兌換資訊" style="">兌換資訊</h2><div class="alert alert-success">
-                    <p>【兌換地點】創新研發大樓3樓 校務研發中心<br>
-                    【兌換時間】8點30分至17點10分<br>
-                    【洽詢單位】校務研發中心 04-2392-4505分機2962</p>
-                    </div><div class="alert alert-warning">
-                    <p>每人限填一份問卷請勿重複填寫</p>
-                    </div>
-                </div>
+            <div class="blog-post">
+                <h2>1、課程資訊</h2>   
+                <table>
+                    <tr>
+                        <th rowspan="2">預定開課學期</th>
+                        <th rowspan="2">課程名稱</th>
+                        <th rowspan="2">預定授課師資--校內、校外、業界(園區)、業界(其他)</th>
+                        <th rowspan="2">預計選修人數</th>
+                        <th colspan="3">時數</th>                        
+                        <th rowspan="2">開設系所/學制/年級</th>
+                        <th rowspan="2">學分數</th>
+                        <th rowspan="2">必/選修課程</th>
+                        <th rowspan="2">是否規劃專題實作</th>
+                        <th rowspan="2">是否為補助課程</th>
+                    </tr>
+                    <tr>                       
+                        <!--時數-->
+                        <th>上課</th>
+                        <th>實作</th>
+                        <th>合計</th>
+                        <!--時數end-->                        
+                    </tr>
+                    <tr>
+                        <th colspan="12">108上學期共1門課，其中1門為補助課程</th>
+                    </tr>
+                    <tr>
+                        <td>上學期</td>
+                        <td>電腦輔助製造</td>
+                        <td>
+                            陳紹賢(校內)<br/>
+                            尤正裕(其他)<br/>
+                            陳佳偉(園區)<br/> 
+                        </td>
+                        <td>30</td>
+                        <td>36</td>
+                        <td>18</td>
+                        <td>54</td>
+                        <td>機械工程系/四年制/三年級</td>
+                        <td>3</td>
+                        <td>選修</td>
+                        <td>是</td>
+                        <td>是</td>
+                    </tr> 
+                    <tr>
+                        <th colspan="12">108下學期共2門課，其中2門為補助課程</th>
+                    </tr>
+                    <tr>
+                        <td>下學期</td>
+                        <td>電腦輔助設計</td>
+                        <td>
+                            謝明珠(校內)<br/>
+                            王宏泰(其他)<br/>
+                            林高民(園區)<br/>
+                        </td>
+                        <td>30</td>
+                        <td>36</td>
+                        <td>18</td>
+                        <td>54</td>
+                        <td>機械工程系/四年制/三年級</td>
+                        <td>3</td>
+                        <td>必修</td>
+                        <td>是</td>
+                        <td>是</td>
+                    </tr>
+                    <tr>
+                        <td>下學期</td>
+                        <td>機械工程實驗（三)</td>
+                        <td>
+                            黃智勇(校內)<br/>
+                            陳正芳(園區)<br/>
+                            林榮森(其他)<br/>       
+                        </td>
+                        <td>50</td>
+                        <td>24</td>
+                        <td>30</td>
+                        <td>54</td>
+                        <td>機械工程系/四年制/三年級</td>
+                        <td>3</td>
+                        <td>必修</td>
+                        <td>是</td>
+                        <td>是</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">上下學期合計</td>
+                        <td>110</td>
+                        <td>96</td>
+                        <td>66</td>
+                        <td>162</td>
+                        <td></td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>                     
+                </table>
+                <br>
+                <h2>2、課程大綱</h2>
+                <table>
+                    <tr>
+                        <td>預定開課時間</td>
+                        <td>是否為補助課程</td>
+                        <td>課程名稱</td>
+                        <td>課程大綱</td>
+                    </tr>
+                    <tr>
+                        <td>108上學期</td>
+                        <td>是</td>
+                        <td>電腦輔助製造</td>
+                        <td>課程摘要<br/>
+                            使學生了解CAM基本的概念、觀念與原則，並將所學得之知識應用於設計中之相關問題上<br/>
+                            教學單元:<br/>
+                            1.基本指令<br/>
+                            2.曲面模型繪製<br/>
+                            3.實體模型繪製<br/>
+                            4.刀具路徑模擬（粗加工與精加工）<br/>
+                            5.實物之設計及繪製範例講解<br/>
+                            6.加工中心機操作講解<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>108下學期</td>
+                        <td>是</td>
+                        <td>電腦輔助設計</td>
+                        <td>教學目標:<br/>
+                            1.使學生了解電腦輔助設計製圖之基本知識（知識）<br/>
+                            2.能具備電腦輔助設計製圖之相關技能（技能）<br/>
+                            3.能具備電腦輔助設計製圖人員之專業態度（態度）<br/>
+                            4.能瞭解電腦輔助設計製圖產業之市場及其發展情形（其他）<br/>
+                            課程大綱:<br/>
+                            1.3D參數式設計原理<br/>
+                            2.3D參數式操作技術<br/>
+                            3.草圖輪廓與限制條件<br/>
+                            4.零件塑型基礎<br/>
+                            5.元件特徵與工作特徵<br/>
+                            6.建立表格驅動零件<br/>
+                            7.建立圖面視圖<br/>
+                            8.組立零件<br/>
+                            9.建立材料表、件號與零件表<br/>
+                            10.專題實作<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>108下學期</td>
+                        <td>是</td>
+                        <td>機械工程實驗（三）</td>
+                        <td>1.PLC在自動化設備的應用<br/>
+                            2.PLC基本指令、階梯圖設計實例<br/>
+                            3.狀態步進階梯圖<br/>
+                            4.電腦輔助PLC設計及人機介面開發<br/>
+                            5.輸送帶分料模組實習<br/>
+                            6.材質正反面翻轉模組實習<br/>
+                            7.機械手臂模組實習<br/>
+                            8.龍門移載模組實習<br/>
+                            9.左右選項出料模組實習<br/>
+                            10.三位置擺動模組實習<br/>
+                            11.二位置擺動模組實習<br/>
+                            12.圓料分離模組實習<br/>
+                        </td>
+                    </tr>
+                </table>
             </div>
         <!-- /.blog-post -->
         </div><!-- /.row -->
