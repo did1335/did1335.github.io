@@ -1,5 +1,7 @@
 # website
-[opencv intellsense extension](https://did1335.github.io/opencv_extension/)
+~~[opencv intellsense extension]~~(https://did1335.github.io/opencv_extension/)
+
+[opencv intellsense extension](http://git.intellicvorg.nctu.me/opencv_extension/src/index.html)
 
 [git memory](https://www.gitmemory.com/did1335/)
 
