@@ -39,6 +39,18 @@
     background-color: black;
 }
 
+
+/*aside*/
+
+aside {
+    max-width: 25%;
+}
+
+aside article {
+    padding-left: 40px;
+    text-align: justify;
+}
+
 .logo {
     text-align: center;
     margin-top: 2rem;

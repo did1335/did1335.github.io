@@ -12,6 +12,9 @@
 }
 
 @media screen and (max-width:1000px) {
+    aside {
+        max-width: 90%;
+    }
     .logo {
         margin-top: 0;
     }
