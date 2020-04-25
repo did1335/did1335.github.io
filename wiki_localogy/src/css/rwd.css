@@ -28,12 +28,25 @@
         font-size: 26pt;
     }
     footer {
-        top: 200vh;
+        top: 180vh;
+        font-size: 12pt;
     }
 }
 
 @media screen and (max-width:600px) {
     footer {
-        top: 225vh;
+        top: 210vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer {
+        top: 220vh;
+    }
+}
+
+@media screen and (max-width:374px) {
+    footer {
+        top: 230vh;
     }
 }
