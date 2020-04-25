@@ -75,7 +75,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 50vw;
+    top: 100vh;
     background-color: white;
     width: 100vw;
     margin-left: -8px;
@@ -87,7 +87,7 @@
 }
 
 .member {
-    width: 80%;
+    max-width: 80%;
     height: 45vw;
     right: 0;
     justify-content: flex-end;
@@ -135,4 +135,14 @@
 #join {
     grid-area: join;
     background-color: rgb(148, 105, 218);
+}
+
+
+/*footer*/
+
+footer {
+    position: relative;
+    top: 130vh;
+    text-align: center;
+    margin-bottom: 10px;
 }

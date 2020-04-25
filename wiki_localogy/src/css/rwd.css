@@ -3,16 +3,31 @@
         text-align: center;
         display: inline-block;
     }
+    .member {
+        margin-left: -100px;
+    }
+    footer {
+        top: 150vh;
+    }
 }
 
 @media screen and (max-width:1000px) {
     .logo {
         margin-top: 0;
     }
+    .team {
+        display: inline-block;
+    }
+    .member {
+        margin-left: 0;
+    }
     .member>h1 {
         font-size: 26pt;
     }
     .card p {
         font-size: 26pt;
+    }
+    footer {
+        top: 200vh;
     }
 }
