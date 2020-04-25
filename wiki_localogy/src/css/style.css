@@ -1,0 +1,139 @@
+* {
+    font-family: Arial, Helvetica, sans-serif, 'Microsoft JhengHei';
+    font-weight: 500;
+}
+
+
+/*banner*/
+
+.banner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: royalblue;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.banner>h1 {
+    font-size: 5rem;
+}
+
+.banner article {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+    margin-top: -2rem;
+}
+
+.banner>article span {
+    background-color: black;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-left: -16px;
+    left: 50%;
+    bottom: 10%;
+}
+
+.logo img {
+    width: 4rem;
+    cursor: pointer;
+    animation: fingerDown 3s infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes fingerDown {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0.5rem);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+
+/*team*/
+
+.team {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 50vw;
+    background-color: white;
+    width: 100vw;
+    margin-left: -8px;
+    z-index: 1;
+}
+
+.wikidata {
+    padding: 1rem 2rem;
+}
+
+.member {
+    width: 80%;
+    height: 45vw;
+    right: 0;
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-areas: "opensorce title" "null newtaipei" "null taichung" "null join";
+    row-gap: 1rem;
+}
+
+.member>h1 {
+    grid-area: title;
+    text-align: left;
+    font-size: 30pt;
+}
+
+.card {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2rem;
+    max-width: 100%;
+    height: 200px;
+    padding: 1rem 2rem;
+}
+
+.card p {
+    font-size: 36pt;
+    color: white;
+}
+
+#join a {
+    color: white;
+}
+
+#newtaipei {
+    grid-area: newtaipei;
+    background-color: tomato;
+}
+
+#taichung {
+    grid-area: taichung;
+    background-color: turquoise;
+}
+
+#join {
+    grid-area: join;
+    background-color: rgb(148, 105, 218);
+}
