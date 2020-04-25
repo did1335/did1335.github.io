@@ -39,9 +39,8 @@
 }
 
 .logo {
-    position: absolute;
-    display: flex;
     text-align: center;
+    margin-top: 2rem;
     margin-left: -16px;
     left: 50%;
     bottom: 10%;

@@ -6,6 +6,9 @@
 }
 
 @media screen and (max-width:1000px) {
+    .logo {
+        margin-top: 0;
+    }
     .member>h1 {
         font-size: 26pt;
     }
