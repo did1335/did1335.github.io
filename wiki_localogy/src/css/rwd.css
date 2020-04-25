@@ -7,19 +7,29 @@
         margin-left: -100px;
     }
     footer {
-        top: 150vh;
+        top: 140vh;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    footer {
+        top: 105vh;
     }
 }
 
 @media screen and (max-width:1000px) {
-    aside {
-        max-width: 90%;
-    }
     .logo {
         margin-top: 0;
     }
     .team {
         display: inline-block;
+    }
+    aside {
+        max-width: 90%;
+        text-align: center;
+    }
+    .wikidata img {
+        margin-left: 16px;
     }
     .member {
         margin-left: 0;
