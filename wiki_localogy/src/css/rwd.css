@@ -31,3 +31,9 @@
         top: 200vh;
     }
 }
+
+@media screen and (max-width:600px) {
+    footer {
+        top: 225vh;
+    }
+}
