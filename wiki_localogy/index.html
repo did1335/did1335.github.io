@@ -17,12 +17,12 @@
     <div id="app">
         <header>
             <div class="banner">
-                <h1>開源<span style="vertical-align: top;">x</span>創生</h1>
+                <h1 v-html="title"></h1>
                 <article>
-                    <p>當<span>開源</span>與<span>文史</span>相遇時</p>
-                    <p><span>創造</span>歷史建築的<span>新生命</span></p>
+                    <p v-html="slogan1"></p>
+                    <p v-html="slogan2"></p>
                     <div class="logo">
-                        <img src="src/svg/scroll.svg" alt="scroll" class="logo" onclick="scrolldown();">
+                        <img :src="finger" alt="scroll" class="logo" onclick="scrolldown();">
                     </div>
                 </article>
             </div>
@@ -30,7 +30,7 @@
         <div class="team" id="team">
             <aside>
                 <div class="wikidata">
-                    <img :src="wikidata" alt="wikidata">
+                    <img :src="wikidata" alt="wikidata" :style="wikidataStyle" @click="goWikidata">
                 </div>
                 <article>
                     {{intro}}
@@ -56,6 +56,22 @@
         </footer>
     </div>
 
+    <noscript>
+        <div style="z-index: 1000;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        margin-left: -8px;
+        font-size: 20pt;">
+            <p>本頁面需要瀏覽器啟用JavaScript!</p>
+            <p>頁面重導向中...</p>
+            <p>如不會自行跳轉，請點選下方連結</p>
+            <a href="noscript.html">無js簡易版網站</a>
+        </div>
+        <meta http-equiv="refresh" content="0; url=noscript.html">
+    </noscript>
 
     <script>
         function scrolldown() {
