@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="test1.css">
+        <style>
+            #font1{
+                font-size: 10pt; 
+                font-size: 100pt;
+            }
+            .class1{
+                font-size: 200pt;
+            }
+            .class2{
+                font-size: 50pt;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="font1" style="font-size: 30pt; color: blue;">123</p>
+        <button id="btn1">請按我</button>
+        <p id="test1" class="class1">ABC</p>
+
+
+        <script>
+            $("#font1").css("color","green");
+            //$("#test1").hide();
+            var x=false;
+            $("#btn1").click(function(){  
+                x=!x;              
+                if(x===true){
+                    $("#test1").addClass("class2");
+                    $("#test1").removeClass("class1");
+                }else{
+                    $("#test1").addClass("class1");
+                    $("#test1").removeClass("class2");
+                }
+            }); 
+            /* if(x%3===1){
+                    alert('一') ;
+                   // $("#test1").show();
+                }else if(x%3===2){ //x==true
+                    alert('二');
+                   // $("#test1").hide();
+                }else{
+                    alert('整除');
+                }*/
+
+                //alert('123');
+                //window.open('https://www.google.com'); 
+        </script>
+    </body>
+</html>
+              
