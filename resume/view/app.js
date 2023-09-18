@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         head: {
             my_photo: 'src/img/myphoto.jpg',
-            title: '朱庭宏 <span style="font-size: 20pt; vertical-align: baseline;">Hank, CHU</span>',
+            title: '朱庭宏 <span style="font-size: 20pt; vertical-align: baseline;">Hank, Chu</span>',
             subtitle: '@did1335',
             quote: '<span style="vertical-align: middle;">&nbsp;用網路來串聯社群，用程式來改變世界&nbsp;</span>'
         },
