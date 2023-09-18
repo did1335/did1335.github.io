@@ -19,7 +19,7 @@ var app = new Vue({
             github: 'src/icon/github.svg'
         },
         competition: {
-            title: 'Compitition',
+            title: 'Competition',
             num1: '2019國際智慧機器人運動大賽全能機器人組跳遠第一名',
             num2: '2018臺灣國際創新發明暨設計競賽發明類設計組銀牌'
         },
